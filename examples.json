@@ -1,0 +1,103 @@
+[
+  {
+    "label": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0"
+    },
+    "expected": {
+      "score": 0,
+      "raw": {
+        "sobrevida": 98.3
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+    "input": {
+      "idade": "0",
+      "icc": true,
+      "dpoc": true,
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0"
+    },
+    "expected": {
+      "score": 2,
+      "raw": {
+        "sobrevida": 90.15
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "idade": "0",
+      "icc": true,
+      "dpoc": true,
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+    "input": {
+      "idade": "2",
+      "iam": true,
+      "figado": "0",
+      "dm": "1",
+      "tumor": "0"
+    },
+    "expected": {
+      "score": 4,
+      "raw": {
+        "cci": 2,
+        "sobrevida": 53.39
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "idade": "2",
+      "iam": true,
+      "figado": "0",
+      "dm": "1",
+      "tumor": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Tumor metastático, 72 anos: 9 pontos",
+    "input": {
+      "idade": "3",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "6"
+    },
+    "expected": {
+      "score": 9,
+      "raw": {
+        "cci": 6,
+        "sobrevida": 0
+      },
+      "level": "high",
+      "tol": 0.1
+    },
+    "originalInput": {
+      "idade": "3",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "6"
+    },
+    "expandedZeroOptions": []
+  }
+]

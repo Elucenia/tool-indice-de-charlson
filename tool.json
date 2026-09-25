@@ -1,0 +1,316 @@
+{
+  "tool": {
+    "id": "indice-de-charlson",
+    "title": "Índice de Comorbidade de Charlson",
+    "short": "Carga de comorbidades e sobrevida em 10 anos",
+    "desc": "Calcule o Índice de Comorbidade de Charlson ajustado pela idade, com a estimativa de sobrevida em 10 anos e a mortalidade em 1 ano da coorte original.",
+    "lead": "Quantifica a carga de comorbidades e estima o prognóstico de longo prazo; é usado para ajustar risco em estudos e apoiar decisões sobre rastreamento e tratamentos agressivos.",
+    "spec": [
+      "clinica-medica",
+      "geriatria",
+      "oncologia-clinica",
+      "medicina-intensiva"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "idade",
+        "Idade",
+        "radio",
+        {
+          "opts": {
+            "0": "&lt; 50",
+            "1": "50 a 59",
+            "2": "60 a 69",
+            "3": "70 a 79",
+            "4": "≥ 80"
+          }
+        }
+      ],
+      [
+        "iam",
+        "Infarto do miocárdio prévio",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "icc",
+        "Insuficiência cardíaca congestiva",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "dap",
+        "Doença arterial periférica (ou aneurisma de aorta ≥ 6 cm)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "avc",
+        "Doença cerebrovascular (AVC com sequela leve ou AIT)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "demencia",
+        "Demência",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "dpoc",
+        "Doença pulmonar crônica",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "colageno",
+        "Doença do tecido conjuntivo (LES, polimiosite, AR, polimialgia)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "ulcera",
+        "Doença ulcerosa péptica",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "figado",
+        "Doença hepática",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Leve (hepatite crônica, cirrose sem hipertensão portal)",
+            "3": "Moderada ou grave (cirrose com hipertensão portal)"
+          }
+        }
+      ],
+      [
+        "dm",
+        "Diabetes mellitus",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sem lesão de órgão-alvo",
+            "2": "Com lesão de órgão-alvo"
+          }
+        }
+      ],
+      [
+        "hemiplegia",
+        "Hemiplegia",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "renal",
+        "Doença renal moderada ou grave (creatinina &gt; 3 mg/dL, diálise ou transplante)",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "tumor",
+        "Tumor sólido",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "2": "Sem metástase (últimos 5 anos)",
+            "6": "Metastático"
+          }
+        }
+      ],
+      [
+        "leucemia",
+        "Leucemia",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "linfoma",
+        "Linfoma",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "aids",
+        "Aids (não apenas HIV positivo)",
+        "chk",
+        {
+          "pts": 6
+        }
+      ]
+    ],
+    "formula": "<p>1 ponto: infarto, insuficiência cardíaca, doença arterial periférica, doença cerebrovascular, demência, doença pulmonar crônica, doença do tecido conjuntivo, úlcera péptica, hepatopatia leve, diabetes sem lesão de órgão-alvo. 2 pontos: hemiplegia, doença renal moderada/grave, diabetes com lesão de órgão-alvo, tumor sólido, leucemia, linfoma. 3 pontos: hepatopatia moderada/grave. 6 pontos: tumor metastático, aids.</p><p><strong>Ajuste pela idade (Charlson 1994):</strong> 1 ponto por década a partir dos 50 anos (50–59 = 1; 60–69 = 2; 70–79 = 3; ≥ 80 = 4).</p><p><strong>Sobrevida estimada em 10 anos</strong> = 0,983<sup>e<sup>(0,9 × índice)</sup></sup> × 100%.</p>",
+    "table": [
+      [
+        "Índice (sem idade)",
+        "Mortalidade em 1 ano (coorte de 1987)"
+      ],
+      [
+        "0",
+        "12%"
+      ],
+      [
+        "1 a 2",
+        "26%"
+      ],
+      [
+        "3 a 4",
+        "52%"
+      ],
+      [
+        "≥ 5",
+        "85%"
+      ]
+    ],
+    "table_note": "Coorte de derivação de 559 pacientes clínicos internados (Nova York, 1984). A mortalidade atual tende a ser menor: use como estimativa relativa.",
+    "tips": [
+      "Conte cada condição uma única vez, na forma mais grave: hepatopatia leve <em>ou</em> grave, diabetes sem <em>ou</em> com lesão de órgão-alvo, tumor localizado <em>ou</em> metastático.",
+      "Registre apenas diagnósticos confirmados em prontuário; condições agudas em resolução não entram.",
+      "Uma sobrevida estimada em 10 anos baixa ajuda a discutir a suspensão de rastreamentos (câncer de cólon, mama, próstata) e metas glicêmicas menos rígidas.",
+      "O índice foi derivado antes das terapias atuais para HIV, insuficiência cardíaca e câncer: em aids controlada e em tumores de bom prognóstico, ele superestima o risco."
+    ],
+    "sources": [
+      [
+        "Charlson ME et al. A new method of classifying prognostic comorbidity in longitudinal studies: development and validation. J Chronic Dis, 1987.",
+        "https://doi.org/10.1016/0021-9681(87)90171-8"
+      ],
+      [
+        "Charlson M et al. Validation of a combined comorbidity index. J Clin Epidemiol, 1994.",
+        "https://doi.org/10.1016/0895-4356(94)90129-5"
+      ]
+    ],
+    "cases": [
+      [
+        "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+        {
+          "idade": "0",
+          "figado": "0",
+          "dm": "0",
+          "tumor": "0"
+        },
+        {
+          "score": 0,
+          "raw": {
+            "sobrevida": 98.3
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+        {
+          "idade": "0",
+          "icc": true,
+          "dpoc": true,
+          "figado": "0",
+          "dm": "0",
+          "tumor": "0"
+        },
+        {
+          "score": 2,
+          "raw": {
+            "sobrevida": 90.15
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+        {
+          "idade": "2",
+          "iam": true,
+          "figado": "0",
+          "dm": "1",
+          "tumor": "0"
+        },
+        {
+          "score": 4,
+          "raw": {
+            "cci": 2,
+            "sobrevida": 53.39
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Tumor metastático, 72 anos: 9 pontos",
+        {
+          "idade": "3",
+          "figado": "0",
+          "dm": "0",
+          "tumor": "6"
+        },
+        {
+          "score": 9,
+          "raw": {
+            "cci": 6,
+            "sobrevida": 0
+          },
+          "level": "high",
+          "tol": 0.1
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}
