@@ -1,11 +1,11 @@
-/* tool-indice-de-charlson · Elucenia · https://github.com/Elucenia/tool-indice-de-charlson
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-indice-de-charlson · ELUCENIA · https://github.com/Elucenia/tool-indice-de-charlson
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"indice-de-charlson","title":"Índice de Comorbidade de Charlson","fields":[["idade","Idade","radio",{"opts":{"0":"&lt; 50","1":"50 a 59","2":"60 a 69","3":"70 a 79","4":"≥ 80"}}],["iam","Infarto do miocárdio prévio","chk",{"pts":1}],["icc","Insuficiência cardíaca congestiva","chk",{"pts":1}],["dap","Doença arterial periférica (ou aneurisma de aorta ≥ 6 cm)","chk",{"pts":1}],["avc","Doença cerebrovascular (AVC com sequela leve ou AIT)","chk",{"pts":1}],["demencia","Demência","chk",{"pts":1}],["dpoc","Doença pulmonar crônica","chk",{"pts":1}],["colageno","Doença do tecido conjuntivo (LES, polimiosite, AR, polimialgia)","chk",{"pts":1}],["ulcera","Doença ulcerosa péptica","chk",{"pts":1}],["figado","Doença hepática","radio",{"opts":{"0":"Não","1":"Leve (hepatite crônica, cirrose sem hipertensão portal)","3":"Moderada ou grave (cirrose com hipertensão portal)"}}],["dm","Diabetes mellitus","radio",{"opts":{"0":"Não","1":"Sem lesão de órgão-alvo","2":"Com lesão de órgão-alvo"}}],["hemiplegia","Hemiplegia","chk",{"pts":2}],["renal","Doença renal moderada ou grave (creatinina &gt; 3 mg/dL, diálise ou transplante)","chk",{"pts":2}],["tumor","Tumor sólido","radio",{"opts":{"0":"Não","2":"Sem metástase (últimos 5 anos)","6":"Metastático"}}],["leucemia","Leucemia","chk",{"pts":2}],["linfoma","Linfoma","chk",{"pts":2}],["aids","Aids (não apenas HIV positivo)","chk",{"pts":6}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
