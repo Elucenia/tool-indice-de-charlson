@@ -280,13 +280,9 @@
         }
       ]
     ],
-    "batch": "clinica",
     "kind": "Calculadora",
     "config": null,
-    "areaId": "clinica",
     "clinicalReview": "pending",
-    "sourceReview": "pending",
-    "sourceFile": "app/content/ferramentas/clinica.php",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -306,11 +302,6 @@
     "status": "needs-review",
     "reason": "Revisão documental e clínica independente pendente.",
     "clinicalValidation": "not-performed"
-  },
-  "sourceFile": {
-    "path": "app/content/ferramentas/clinica.php",
-    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
-    "bytes": 101245
   },
   "clinicalValidation": "not-performed"
 }
