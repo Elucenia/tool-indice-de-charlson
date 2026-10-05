@@ -1,0 +1,532 @@
+{
+  "id": "indice-de-charlson",
+  "at": "2026-10-05T17:29:48.899Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/indice-de-charlson/calculator.js",
+    "bytes": 6171,
+    "sha256": "9faf773ca651ae2a67aa9c7ad2942ee8fcce70930e4e3d6964d349fa6e124374"
+  },
+  "cases": [
+    {
+      "name": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+      "input": {
+        "idade": "0",
+        "figado": "0",
+        "dm": "0",
+        "tumor": "0",
+        "iam": false,
+        "icc": false,
+        "dap": false,
+        "avc": false,
+        "demencia": false,
+        "dpoc": false,
+        "colageno": false,
+        "ulcera": false,
+        "hemiplegia": false,
+        "renal": false,
+        "leucemia": false,
+        "linfoma": false,
+        "aids": false
+      },
+      "obtained": {
+        "id": "indice-de-charlson",
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "Charlson ajustado pela idade",
+        "raw": {
+          "score": 0,
+          "cci": 0,
+          "sobrevida": 98.3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.sobrevida",
+          "expected": 98.3,
+          "obtained": 98.3,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cci",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.sobrevida",
+          "expected": 98.3,
+          "obtained": 98.3,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "0",
+          "obtained": "0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "pontos",
+          "obtained": "pontos",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+      "input": {
+        "idade": "0",
+        "icc": true,
+        "dpoc": true,
+        "figado": "0",
+        "dm": "0",
+        "tumor": "0",
+        "iam": false,
+        "dap": false,
+        "avc": false,
+        "demencia": false,
+        "colageno": false,
+        "ulcera": false,
+        "hemiplegia": false,
+        "renal": false,
+        "leucemia": false,
+        "linfoma": false,
+        "aids": false
+      },
+      "obtained": {
+        "id": "indice-de-charlson",
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "Charlson ajustado pela idade",
+        "raw": {
+          "score": 2,
+          "cci": 2,
+          "sobrevida": 90.14702690368213
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.sobrevida",
+          "expected": 90.15,
+          "obtained": 90.14702690368213,
+          "tolerance": 0.00500001,
+          "difference": 0.002973096317873569,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cci",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.sobrevida",
+          "expected": 90.14702690368213,
+          "obtained": 90.14702690368213,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "2",
+          "obtained": "2",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "pontos",
+          "obtained": "pontos",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+      "input": {
+        "idade": "2",
+        "iam": true,
+        "figado": "0",
+        "dm": "1",
+        "tumor": "0",
+        "icc": false,
+        "dap": false,
+        "avc": false,
+        "demencia": false,
+        "dpoc": false,
+        "colageno": false,
+        "ulcera": false,
+        "hemiplegia": false,
+        "renal": false,
+        "leucemia": false,
+        "linfoma": false,
+        "aids": false
+      },
+      "obtained": {
+        "id": "indice-de-charlson",
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "Charlson ajustado pela idade",
+        "raw": {
+          "score": 4,
+          "cci": 2,
+          "sobrevida": 53.39147265666947
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cci",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.sobrevida",
+          "expected": 53.39,
+          "obtained": 53.39147265666947,
+          "tolerance": 0.00500001,
+          "difference": 0.0014726566694704957,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 4,
+          "obtained": 4,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 4,
+          "obtained": 4,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cci",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.sobrevida",
+          "expected": 53.39147265666947,
+          "obtained": 53.39147265666947,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "4",
+          "obtained": "4",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "pontos",
+          "obtained": "pontos",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Tumor metastático, 72 anos: 9 pontos",
+      "input": {
+        "idade": "3",
+        "figado": "0",
+        "dm": "0",
+        "tumor": "6",
+        "iam": false,
+        "icc": false,
+        "dap": false,
+        "avc": false,
+        "demencia": false,
+        "dpoc": false,
+        "colageno": false,
+        "ulcera": false,
+        "hemiplegia": false,
+        "renal": false,
+        "leucemia": false,
+        "linfoma": false,
+        "aids": false
+      },
+      "obtained": {
+        "id": "indice-de-charlson",
+        "main": [
+          "9",
+          "pontos"
+        ],
+        "label": "Charlson ajustado pela idade",
+        "raw": {
+          "score": 9,
+          "cci": 6,
+          "sobrevida": 2.936312167835233e-23
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.cci",
+          "expected": 6,
+          "obtained": 6,
+          "tolerance": 0.1,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.sobrevida",
+          "expected": 0,
+          "obtained": 2.936312167835233e-23,
+          "tolerance": 0.1,
+          "difference": 2.936312167835233e-23,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 9,
+          "obtained": 9,
+          "tolerance": 0.1,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 9,
+          "obtained": 9,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.cci",
+          "expected": 6,
+          "obtained": 6,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.sobrevida",
+          "expected": 2.936312167835233e-23,
+          "obtained": 2.936312167835233e-23,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "9",
+          "obtained": "9",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "pontos",
+          "obtained": "pontos",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 29,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

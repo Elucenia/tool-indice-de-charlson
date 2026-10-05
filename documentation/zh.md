@@ -1,0 +1,145 @@
+<!-- ELUCENIA technical documentation · indice-de-charlson · zh · no clinical/professional/rights approval -->
+
+# Charlson 合并症指数
+
+[条件、来源与许可](https://elucenia.org/zh/tools/indice-de-charlson)
+
+## 使用方法
+
+在门户中使用工具，或通过本地 HTTP 服务器打开 index.html。选择语言，填写各字段，然后计算。
+
+## 输入与单位
+
+### 年龄
+
+`idade`
+
+- `0` — \< 50
+- `1` — 50 至 59
+- `2` — 60 至 69
+- `3` — 70 至 79
+- `4` — ≥ 80
+
+### 既往心肌梗死
+
+`iam`
+
+### 充血性心力衰竭
+
+`icc`
+
+### 外周动脉疾病（或主动脉瘤 ≥ 6 cm）
+
+`dap`
+
+### 脑血管病（卒中伴轻度后遗症或 TIA）
+
+`avc`
+
+### 痴呆
+
+`demencia`
+
+### 慢性肺病
+
+`dpoc`
+
+### 结缔组织病（系统性红斑狼疮、多发性肌炎、类风湿关节炎、风湿性多肌痛）
+
+`colageno`
+
+### 消化性溃疡病
+
+`ulcera`
+
+### 肝病
+
+`figado`
+
+- `0` — 否
+- `1` — 轻度（慢性肝炎、无门静脉高压的肝硬化）
+- `3` — 中度或重度（伴门静脉高压的肝硬化）
+
+### 糖尿病
+
+`dm`
+
+- `0` — 否
+- `1` — 无靶器官损害
+- `2` — 有靶器官损害
+
+### 偏瘫
+
+`hemiplegia`
+
+### 中重度肾病（肌酐 \> 3 mg/dL、透析或移植）
+
+`renal`
+
+### 实体瘤
+
+`tumor`
+
+- `0` — 否
+- `2` — 无转移（过去5年）
+- `6` — 转移性
+
+### 白血病
+
+`leucemia`
+
+### 淋巴瘤
+
+`linfoma`
+
+### 艾滋病（不仅是 HIV 阳性）
+
+`aids`
+
+## 方法版本
+
+CCI/Charlson 1987；年龄校正1994；年龄分50–59/60–69/70–79/≥80；本地生存估计
+
+## 已记录的公式
+
+1分：心肌梗死、心力衰竭、外周动脉病、脑血管病、痴呆、慢性肺病、结缔组织病、消化性溃疡、轻度肝病、无靶器官损害糖尿病。2分：偏瘫、中重度肾病、有靶器官损害糖尿病、实体瘤、白血病、淋巴瘤。3分：中重度肝病。6分：转移性肿瘤、艾滋病。
+
+年龄校正（Charlson 1994）： 50岁起每10年1分（50–59=1；60–69=2；70–79=3；≥80=4）。
+
+估计10年生存 = 0.983e(0.9 × 指数) × 100%.
+
+## 限制与适用人群
+
+应明确指数是否包含年龄调整。它是在特定队列和时间范围中研究的合并疾病预后测量，并非普遍适用的预测。本地生存方程需要独立核对和校准；引用文献本身不能证明其个体预测表现。
+
+## 参考文献
+
+- [Charlson ME et al. A new method of classifying prognostic comorbidity in longitudinal studies: development and validation. J Chronic Dis, 1987.](https://doi.org/10.1016/0021-9681(87)90171-8)
+
+- [Charlson M et al. Validation of a combined comorbidity index. J Clin Epidemiol, 1994.](https://doi.org/10.1016/0895-4356(94)90129-5)
+
+## 复现技术测试
+
+在此仓库的根目录中运行 node test.cjs，以重复已记录的合成案例。原始输入、预期结果和容差保持不变。技术测试不构成临床验证。
+
+```sh
+node test.cjs
+```
+
+tool.json 包含来源、版本和审查范围。examples.json 保留合成输入与预期结果；results.json 记录实际得到的结果。
+
+[记录与参考文献](../tool.json) · [JavaScript代码](../calculator.js) · [参考案例](../examples.json) · [results.json](../results.json)
+
+## 审查与使用条件
+
+尚未开展独立临床审查。
+
+此界面为自主编写的翻译，并非官方或认证版本。尚未完成独立临床审查、专业语言审查或工具权利授权。
+
+公式或分类结果。解释、处理及适用性须结合专业评估和所选来源。
+
+## 许可与署名
+
+Apache-2.0 仅适用于 ELUCENIA 代码。工具、出版物、翻译和数据的权利仍归各自权利人所有。请保留 LICENSE 和 NOTICE。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

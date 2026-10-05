@@ -1,11 +1,33 @@
 [
   {
-    "label": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
-    "input": {
+    "id": "indice-de-charlson",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+    "originalInput": {
       "idade": "0",
       "figado": "0",
       "dm": "0",
       "tumor": "0"
+    },
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
     },
     "expected": {
       "score": 0,
@@ -14,23 +36,58 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "idade": "0",
-      "figado": "0",
-      "dm": "0",
-      "tumor": "0"
+    "recordedResult": {
+      "main": [
+        "0",
+        "pontos"
+      ],
+      "label": "Charlson ajustado pela idade",
+      "raw": {
+        "score": 0,
+        "cci": 0,
+        "sobrevida": 98.3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
-    "input": {
+    "id": "indice-de-charlson",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+    "originalInput": {
       "idade": "0",
       "icc": true,
       "dpoc": true,
       "figado": "0",
       "dm": "0",
       "tumor": "0"
+    },
+    "input": {
+      "idade": "0",
+      "icc": true,
+      "dpoc": true,
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
     },
     "expected": {
       "score": 2,
@@ -39,24 +96,57 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "idade": "0",
-      "icc": true,
-      "dpoc": true,
-      "figado": "0",
-      "dm": "0",
-      "tumor": "0"
+    "recordedResult": {
+      "main": [
+        "2",
+        "pontos"
+      ],
+      "label": "Charlson ajustado pela idade",
+      "raw": {
+        "score": 2,
+        "cci": 2,
+        "sobrevida": 90.14702690368213
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
-    "input": {
+    "id": "indice-de-charlson",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+    "originalInput": {
       "idade": "2",
       "iam": true,
       "figado": "0",
       "dm": "1",
       "tumor": "0"
+    },
+    "input": {
+      "idade": "2",
+      "iam": true,
+      "figado": "0",
+      "dm": "1",
+      "tumor": "0",
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
     },
     "expected": {
       "score": 4,
@@ -66,22 +156,56 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "idade": "2",
-      "iam": true,
-      "figado": "0",
-      "dm": "1",
-      "tumor": "0"
+    "recordedResult": {
+      "main": [
+        "4",
+        "pontos"
+      ],
+      "label": "Charlson ajustado pela idade",
+      "raw": {
+        "score": 4,
+        "cci": 2,
+        "sobrevida": 53.39147265666947
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Tumor metastático, 72 anos: 9 pontos",
-    "input": {
+    "id": "indice-de-charlson",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Tumor metastático, 72 anos: 9 pontos",
+    "originalInput": {
       "idade": "3",
       "figado": "0",
       "dm": "0",
       "tumor": "6"
+    },
+    "input": {
+      "idade": "3",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "6",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
     },
     "expected": {
       "score": 9,
@@ -92,12 +216,25 @@
       "level": "high",
       "tol": 0.1
     },
-    "originalInput": {
-      "idade": "3",
-      "figado": "0",
-      "dm": "0",
-      "tumor": "6"
+    "recordedResult": {
+      "main": [
+        "9",
+        "pontos"
+      ],
+      "label": "Charlson ajustado pela idade",
+      "raw": {
+        "score": 9,
+        "cci": 6,
+        "sobrevida": 2.936312167835233e-23
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

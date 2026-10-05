@@ -5,13 +5,13 @@
     "short": "Carga de comorbidades e sobrevida em 10 anos",
     "desc": "Calcule o Índice de Comorbidade de Charlson ajustado pela idade, com a estimativa de sobrevida em 10 anos e a mortalidade em 1 ano da coorte original.",
     "lead": "Quantifica a carga de comorbidades e estima o prognóstico de longo prazo; é usado para ajustar risco em estudos e apoiar decisões sobre rastreamento e tratamentos agressivos.",
+    "kind": "Calculadora",
     "spec": [
       "clinica-medica",
       "geriatria",
       "oncologia-clinica",
       "medicina-intensiva"
     ],
-    "tier": 1,
     "fields": [
       [
         "idade",
@@ -31,65 +31,49 @@
         "iam",
         "Infarto do miocárdio prévio",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "icc",
         "Insuficiência cardíaca congestiva",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "dap",
         "Doença arterial periférica (ou aneurisma de aorta ≥ 6 cm)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "avc",
         "Doença cerebrovascular (AVC com sequela leve ou AIT)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "demencia",
         "Demência",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "dpoc",
         "Doença pulmonar crônica",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "colageno",
         "Doença do tecido conjuntivo (LES, polimiosite, AR, polimialgia)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "ulcera",
         "Doença ulcerosa péptica",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "figado",
@@ -119,17 +103,13 @@
         "hemiplegia",
         "Hemiplegia",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "renal",
         "Doença renal moderada ou grave (creatinina &gt; 3 mg/dL, diálise ou transplante)",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "tumor",
@@ -147,57 +127,22 @@
         "leucemia",
         "Leucemia",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "linfoma",
         "Linfoma",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "aids",
         "Aids (não apenas HIV positivo)",
         "chk",
-        {
-          "pts": 6
-        }
+        {}
       ]
     ],
     "formula": "<p>1 ponto: infarto, insuficiência cardíaca, doença arterial periférica, doença cerebrovascular, demência, doença pulmonar crônica, doença do tecido conjuntivo, úlcera péptica, hepatopatia leve, diabetes sem lesão de órgão-alvo. 2 pontos: hemiplegia, doença renal moderada/grave, diabetes com lesão de órgão-alvo, tumor sólido, leucemia, linfoma. 3 pontos: hepatopatia moderada/grave. 6 pontos: tumor metastático, aids.</p><p><strong>Ajuste pela idade (Charlson 1994):</strong> 1 ponto por década a partir dos 50 anos (50–59 = 1; 60–69 = 2; 70–79 = 3; ≥ 80 = 4).</p><p><strong>Sobrevida estimada em 10 anos</strong> = 0,983<sup>e<sup>(0,9 × índice)</sup></sup> × 100%.</p>",
-    "table": [
-      [
-        "Índice (sem idade)",
-        "Mortalidade em 1 ano (coorte de 1987)"
-      ],
-      [
-        "0",
-        "12%"
-      ],
-      [
-        "1 a 2",
-        "26%"
-      ],
-      [
-        "3 a 4",
-        "52%"
-      ],
-      [
-        "≥ 5",
-        "85%"
-      ]
-    ],
-    "table_note": "Coorte de derivação de 559 pacientes clínicos internados (Nova York, 1984). A mortalidade atual tende a ser menor: use como estimativa relativa.",
-    "tips": [
-      "Conte cada condição uma única vez, na forma mais grave: hepatopatia leve <em>ou</em> grave, diabetes sem <em>ou</em> com lesão de órgão-alvo, tumor localizado <em>ou</em> metastático.",
-      "Registre apenas diagnósticos confirmados em prontuário; condições agudas em resolução não entram.",
-      "Uma sobrevida estimada em 10 anos baixa ajuda a discutir a suspensão de rastreamentos (câncer de cólon, mama, próstata) e metas glicêmicas menos rígidas.",
-      "O índice foi derivado antes das terapias atuais para HIV, insuficiência cardíaca e câncer: em aids controlada e em tumores de bom prognóstico, ele superestima o risco."
-    ],
     "sources": [
       [
         "Charlson ME et al. A new method of classifying prognostic comorbidity in longitudinal studies: development and validation. J Chronic Dis, 1987.",
@@ -280,9 +225,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -291,17 +233,592 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:33:44.393Z",
+      "total": 11944,
+      "passed": 11944,
+      "sourceRowCount": 11944,
+      "uniqueApiInputCount": 11944,
+      "sourceContextCount": 11944,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "0e80926ca6e379207d35c66f84621dd5546fec0d87e0c909912fa15dd62cdb31",
+        "total": 11944,
+        "bankRowCount": 11944,
+        "uniqueApiInputCount": 11944,
+        "sourceContextCount": 11944,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/root-six-independent-expectations-final29.json",
+            "sha256": "92f70c18f7b9f7b96089197af3288c3e7695f1c8e219ef036d4f0989bddfb125"
+          },
+          {
+            "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+            "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/root-six-independent-source-check-final29.json",
+          "sha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043"
+        }
+      },
+      "inputIdentity": "Exact complete immutable API input objects; not execution/runtime counts",
+      "scope": "All8192 booleancombinations atage0 and noordinalcomorbidity; plus single/omission/extreme booleans crossed withall135 age/liver/diabetes/tumor codes. Not exhaustive1105920 totalinputs.",
+      "sources": [
+        {
+          "review": {
+            "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+            "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+          },
+          "item": {
+            "id": "indice-de-charlson",
+            "edition": "Charlson1987 Table3/printed377 and Table6/printed379; selected age codes0–4, not continuous-age validation of1994",
+            "reads": [
+              {
+                "url": "https://icucycle.com/wp-content/uploads/2018/06/2.-Charlson-Charlson-score-J-Chron-Dis-1987.pdf",
+                "read": "Original1987 paper on explicit non-publisher mirror, Table3 and Table6 visually read after text extraction.",
+                "artifact": {
+                  "file": "root-source29-primary-pdfs/charlson-1987-original-mirror.pdf",
+                  "sha256": "7b478a1cbcaafe07477a4ab25c57ae39dfbbfc9cece0d73c8dfd23f19d99dc3d",
+                  "bytes": 981208
+                }
+              }
+            ],
+            "constants": {
+              "booleanKeys": [
+                "iam",
+                "icc",
+                "dap",
+                "avc",
+                "demencia",
+                "dpoc",
+                "colageno",
+                "ulcera",
+                "hemiplegia",
+                "renal",
+                "leucemia",
+                "linfoma",
+                "aids"
+              ],
+              "booleanWeights": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                2,
+                2,
+                2,
+                2,
+                6
+              ],
+              "liver": [
+                0,
+                1,
+                3
+              ],
+              "diabetes": [
+                0,
+                1,
+                2
+              ],
+              "tumor": [
+                0,
+                2,
+                6
+              ],
+              "selectedAge": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            "limitations": [
+              "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+              "Original1987 Table6 already discusses one age point per decade above40 and theoretical10year curve. Full1994 article not retrieved; local≥80=4 cap for90+ is not independently certified against continuous-age original. Only selected age point codes and comorbidity sum are tested; survival estimate/calibration/definitions of comorbidity not approved."
+            ]
+          },
+          "originalSourceReview": {
+            "file": "root-six-primary-source-review-final29.json",
+            "sha256": "5bc754345b3db4ae9521890531cd0e244684bfd168ab88b0b882045fc7b7f036"
+          },
+          "erratum": "Rockall original>100 narrative is retained in the original review; primaryR2 corrects it to≥100 without changing oracle, inputs or code."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/root-six-independent-source-check-final29.json",
+      "evidenceSha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043",
+      "independentPeer": {
+        "status": "reviewed",
+        "file": "reports/review-20261003/root-six-independent-peer-publication-final29-r2.json",
+        "sha256": "9a364220970a26f43c0d738bb7f1b1dfe96d33f064478c7d6c830c1dc0f72518",
+        "scope": "Independent numeric/source-scope peer only",
+        "factualSourceAmendment": {
+          "file": "reports/review-20261003/root-six-publication-own-source-review-final29-r2.json",
+          "sha256": "c5b320651855564578dbb871a91bd9770c09594497b40ea0560be84d75d8139c"
+        }
+      },
+      "metadataPackagingPeer": {
+        "status": "reviewed",
+        "file": "reports/review-20261003/root-six-bank-packaging-peer-final29-r2.json",
+        "sha256": "e1bfe5287b4cc1defcce6c29ecc9d901cf9b5be19aeb047499da56273b9feb69",
+        "scope": "Independent technical bank/helper packaging and frozen raw-output replay; no clinical, professional-language, source-rights or full-method approval.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "originalSourceExecutions": 107496,
+      "freshPreparationSampleExecutions": 12,
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/indice-de-charlson/calculator.js",
+          "sha256": "9faf773ca651ae2a67aa9c7ad2942ee8fcce70930e4e3d6964d349fa6e124374",
+          "bytes": 6171
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/indice-de-charlson/calculator.js",
+          "sha256": "9faf773ca651ae2a67aa9c7ad2942ee8fcce70930e4e3d6964d349fa6e124374",
+          "bytes": 6171
+        },
+        {
+          "file": "apps/command-center/private/tool-code/indice-de-charlson/calculator.js",
+          "sha256": "9faf773ca651ae2a67aa9c7ad2942ee8fcce70930e4e3d6964d349fa6e124374",
+          "bytes": 6171
+        }
+      ],
+      "qualifications": [
+        "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+        "Original1987 Table6 already discusses one age point per decade above40 and theoretical10year curve. Full1994 article not retrieved; local≥80=4 cap for90+ is not independently certified against continuous-age original. Only selected age point codes and comorbidity sum are tested; survival estimate/calibration/definitions of comorbidity not approved.",
+        "No clinical categories/main/severity/advice/diagnosis/prognostic performance/source-rights or professional-language approval. Full numeric observations are historical frozen Node/VM/Chromium; this preparation adds only bounded fresh Node samples.",
+        "Ottawa primary Boolean result and separately counted supplied true findings are not a validated point-risk score. Rockall pre-score is the source point-code sum; preEndoscopic context is not an exposed clinical classifier.",
+        "Whole catalogues are not staged; only these two evidence leaves per ID and complete banks are owned. Source28/six-neuromotor29 helper branches and counters must be composed separately."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "CCI/Charlson 1987; ageadjusted Charlson 1994; pontos idade 50–59/60–69/70–79/≥80; estimativasobrevida local",
+    "implementationVersion": "indice-de-charlson@native-2026-10-03+9faf773ca651",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3558716/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "1 ponto: infarto, insuficiência cardíaca, doença arterial periférica, doença cerebrovascular, demência, doença pulmonar crônica, doença do tecido conjuntivo, úlcera péptica, hepatopatia leve, diabetes sem lesão de órgão-alvo. 2 pontos: hemiplegia, doença renal moderada/grave, diabetes com lesão de órgão-alvo, tumor sólido, leucemia, linfoma. 3 pontos: hepatopatia moderada/grave. 6 pontos: tumor metastático, aids. Ajuste pela idade (Charlson 1994): 1 ponto por década a partir dos 50 anos (50–59 = 1; 60–69 = 2; 70–79 = 3; ≥ 80 = 4). Sobrevida estimada em 10 anos = 0,983 e (0,9 × índice) × 100%.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "idade",
+            "label": "Idade",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "&lt; 50",
+              "1": "50 a 59",
+              "2": "60 a 69",
+              "3": "70 a 79",
+              "4": "≥ 80"
+            }
+          },
+          {
+            "key": "iam",
+            "label": "Infarto do miocárdio prévio",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "icc",
+            "label": "Insuficiência cardíaca congestiva",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dap",
+            "label": "Doença arterial periférica (ou aneurisma de aorta ≥ 6 cm)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "avc",
+            "label": "Doença cerebrovascular (AVC com sequela leve ou AIT)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "demencia",
+            "label": "Demência",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dpoc",
+            "label": "Doença pulmonar crônica",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "colageno",
+            "label": "Doença do tecido conjuntivo (LES, polimiosite, AR, polimialgia)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ulcera",
+            "label": "Doença ulcerosa péptica",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "figado",
+            "label": "Doença hepática",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Leve (hepatite crônica, cirrose sem hipertensão portal)",
+              "3": "Moderada ou grave (cirrose com hipertensão portal)"
+            }
+          },
+          {
+            "key": "dm",
+            "label": "Diabetes mellitus",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sem lesão de órgão-alvo",
+              "2": "Com lesão de órgão-alvo"
+            }
+          },
+          {
+            "key": "hemiplegia",
+            "label": "Hemiplegia",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "renal",
+            "label": "Doença renal moderada ou grave (creatinina &gt; 3 mg/dL, diálise ou transplante)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tumor",
+            "label": "Tumor sólido",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "2": "Sem metástase (últimos 5 anos)",
+              "6": "Metastático"
+            }
+          },
+          {
+            "key": "leucemia",
+            "label": "Leucemia",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "linfoma",
+            "label": "Linfoma",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "aids",
+            "label": "Aids (não apenas HIV positivo)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "f285fe8f5e47d405b599ac87b9e1ca1068f5b59c487183b1b81ce1032ac495b9"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Charlson ME et al. A new method of classifying prognostic comorbidity in longitudinal studies: development and validation. J Chronic Dis, 1987.",
+          "url": "https://doi.org/10.1016/0021-9681(87)90171-8",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A new method of classifying prognostic comorbidity in longitudinal studies: development and validation.",
+            "year": "1987",
+            "firstPublicationDate": "1987-01-01",
+            "doi": "10.1016/0021-9681(87)90171-8",
+            "pmid": "3558716",
+            "journal": "Journal of chronic diseases",
+            "authors": "Charlson ME, Pompei P, Ales KL, MacKenzie CR."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/3558716/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "4add2c98997b82aa49e388545077eb9090dcdfd150a20eac54167356c70bbf2b",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Charlson M et al. Validation of a combined comorbidity index. J Clin Epidemiol, 1994.",
+          "url": "https://doi.org/10.1016/0895-4356(94)90129-5",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Validation of a combined comorbidity index.",
+            "year": "1994",
+            "firstPublicationDate": "1994-11-01",
+            "doi": "10.1016/0895-4356(94)90129-5",
+            "pmid": "7722560",
+            "journal": "Journal of clinical epidemiology",
+            "authors": "Charlson M, Szatrowski TP, Peterson J, Gold J."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/7722560/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "3d4a39d72665a1c90028c519417379cc8d40aa8c0f272ab03dc85b94417a8f41",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:33:44.393Z",
+        "total": 11944,
+        "passed": 11944,
+        "sourceRowCount": 11944,
+        "uniqueApiInputCount": 11944,
+        "sourceContextCount": 11944,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "0e80926ca6e379207d35c66f84621dd5546fec0d87e0c909912fa15dd62cdb31",
+          "total": 11944,
+          "bankRowCount": 11944,
+          "uniqueApiInputCount": 11944,
+          "sourceContextCount": 11944,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/root-six-independent-expectations-final29.json",
+              "sha256": "92f70c18f7b9f7b96089197af3288c3e7695f1c8e219ef036d4f0989bddfb125"
+            },
+            {
+              "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+              "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/root-six-independent-source-check-final29.json",
+            "sha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043"
+          }
+        },
+        "inputIdentity": "Exact complete immutable API input objects; not execution/runtime counts",
+        "scope": "All8192 booleancombinations atage0 and noordinalcomorbidity; plus single/omission/extreme booleans crossed withall135 age/liver/diabetes/tumor codes. Not exhaustive1105920 totalinputs.",
+        "sources": [
+          {
+            "review": {
+              "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+              "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+            },
+            "item": {
+              "id": "indice-de-charlson",
+              "edition": "Charlson1987 Table3/printed377 and Table6/printed379; selected age codes0–4, not continuous-age validation of1994",
+              "reads": [
+                {
+                  "url": "https://icucycle.com/wp-content/uploads/2018/06/2.-Charlson-Charlson-score-J-Chron-Dis-1987.pdf",
+                  "read": "Original1987 paper on explicit non-publisher mirror, Table3 and Table6 visually read after text extraction.",
+                  "artifact": {
+                    "file": "root-source29-primary-pdfs/charlson-1987-original-mirror.pdf",
+                    "sha256": "7b478a1cbcaafe07477a4ab25c57ae39dfbbfc9cece0d73c8dfd23f19d99dc3d",
+                    "bytes": 981208
+                  }
+                }
+              ],
+              "constants": {
+                "booleanKeys": [
+                  "iam",
+                  "icc",
+                  "dap",
+                  "avc",
+                  "demencia",
+                  "dpoc",
+                  "colageno",
+                  "ulcera",
+                  "hemiplegia",
+                  "renal",
+                  "leucemia",
+                  "linfoma",
+                  "aids"
+                ],
+                "booleanWeights": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  2,
+                  2,
+                  2,
+                  2,
+                  6
+                ],
+                "liver": [
+                  0,
+                  1,
+                  3
+                ],
+                "diabetes": [
+                  0,
+                  1,
+                  2
+                ],
+                "tumor": [
+                  0,
+                  2,
+                  6
+                ],
+                "selectedAge": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              "limitations": [
+                "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+                "Original1987 Table6 already discusses one age point per decade above40 and theoretical10year curve. Full1994 article not retrieved; local≥80=4 cap for90+ is not independently certified against continuous-age original. Only selected age point codes and comorbidity sum are tested; survival estimate/calibration/definitions of comorbidity not approved."
+              ]
+            },
+            "originalSourceReview": {
+              "file": "root-six-primary-source-review-final29.json",
+              "sha256": "5bc754345b3db4ae9521890531cd0e244684bfd168ab88b0b882045fc7b7f036"
+            },
+            "erratum": "Rockall original>100 narrative is retained in the original review; primaryR2 corrects it to≥100 without changing oracle, inputs or code."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/root-six-independent-source-check-final29.json",
+        "evidenceSha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043",
+        "independentPeer": {
+          "status": "reviewed",
+          "file": "reports/review-20261003/root-six-independent-peer-publication-final29-r2.json",
+          "sha256": "9a364220970a26f43c0d738bb7f1b1dfe96d33f064478c7d6c830c1dc0f72518",
+          "scope": "Independent numeric/source-scope peer only",
+          "factualSourceAmendment": {
+            "file": "reports/review-20261003/root-six-publication-own-source-review-final29-r2.json",
+            "sha256": "c5b320651855564578dbb871a91bd9770c09594497b40ea0560be84d75d8139c"
+          }
+        },
+        "metadataPackagingPeer": {
+          "status": "reviewed",
+          "file": "reports/review-20261003/root-six-bank-packaging-peer-final29-r2.json",
+          "sha256": "e1bfe5287b4cc1defcce6c29ecc9d901cf9b5be19aeb047499da56273b9feb69",
+          "scope": "Independent technical bank/helper packaging and frozen raw-output replay; no clinical, professional-language, source-rights or full-method approval.",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "originalSourceExecutions": 107496,
+        "freshPreparationSampleExecutions": 12,
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/indice-de-charlson/calculator.js",
+            "sha256": "9faf773ca651ae2a67aa9c7ad2942ee8fcce70930e4e3d6964d349fa6e124374",
+            "bytes": 6171
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/indice-de-charlson/calculator.js",
+            "sha256": "9faf773ca651ae2a67aa9c7ad2942ee8fcce70930e4e3d6964d349fa6e124374",
+            "bytes": 6171
+          },
+          {
+            "file": "apps/command-center/private/tool-code/indice-de-charlson/calculator.js",
+            "sha256": "9faf773ca651ae2a67aa9c7ad2942ee8fcce70930e4e3d6964d349fa6e124374",
+            "bytes": 6171
+          }
+        ],
+        "qualifications": [
+          "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+          "Original1987 Table6 already discusses one age point per decade above40 and theoretical10year curve. Full1994 article not retrieved; local≥80=4 cap for90+ is not independently certified against continuous-age original. Only selected age point codes and comorbidity sum are tested; survival estimate/calibration/definitions of comorbidity not approved.",
+          "No clinical categories/main/severity/advice/diagnosis/prognostic performance/source-rights or professional-language approval. Full numeric observations are historical frozen Node/VM/Chromium; this preparation adds only bounded fresh Node samples.",
+          "Ottawa primary Boolean result and separately counted supplied true findings are not a validated point-risk score. Rockall pre-score is the source point-code sum; preEndoscopic context is not an exposed clinical classifier.",
+          "Whole catalogues are not staged; only these two evidence leaves per ID and complete banks are owned. Source28/six-neuromotor29 helper branches and counters must be composed separately."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "9faf773ca651ae2a67aa9c7ad2942ee8fcce70930e4e3d6964d349fa6e124374"
+    },
+    "limits": "Identifique se o índice inclui ajuste por idade. É uma medida prognóstica de comorbidade estudada em coortes e horizontes definidos, não uma previsão universal. A equação local de sobrevida exige conferência e calibração próprias; a presença da referência bibliográfica não comprova seu desempenho individual.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.039Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Equação local de sobrevida 0,983^(exp(0,9×índice)) e todos os pesos não foram conferidos nos artigos integrais."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/indice-de-charlson/calculator.js",
+    "bytes": 6171,
+    "sha256": "9faf773ca651ae2a67aa9c7ad2942ee8fcce70930e4e3d6964d349fa6e124374"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "4cd18f81829779b6689c1e259bc66b506b4d6028a5ec1ccfe493d405fd289156",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "2a799229c7608917b006cfefe7a82f1b0704ea4ef2c1ea65c5c5971339bb0c90",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "2a799229c7608917b006cfefe7a82f1b0704ea4ef2c1ea65c5c5971339bb0c90",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

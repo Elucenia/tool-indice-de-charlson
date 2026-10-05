@@ -1,0 +1,709 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field idade",
+    "input": {
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field idade",
+    "input": {
+      "idade": "",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option idade",
+    "input": {
+      "idade": "__ELUCENIA_INVALID_OPTION__",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean iam",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": "2",
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "iam"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean icc",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": "2",
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "icc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dap",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": "2",
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dap"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean avc",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": "2",
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "avc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean demencia",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": "2",
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "demencia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dpoc",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": "2",
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dpoc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean colageno",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": "2",
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "colageno"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean ulcera",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": "2",
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ulcera"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field figado",
+    "input": {
+      "idade": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "figado"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field figado",
+    "input": {
+      "idade": "0",
+      "figado": "",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "figado"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option figado",
+    "input": {
+      "idade": "0",
+      "figado": "__ELUCENIA_INVALID_OPTION__",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "figado"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field dm",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "dm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field dm",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "dm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option dm",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "__ELUCENIA_INVALID_OPTION__",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "dm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean hemiplegia",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": "2",
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hemiplegia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean renal",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": "2",
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "renal"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tumor",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tumor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tumor",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tumor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option tumor",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "__ELUCENIA_INVALID_OPTION__",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "tumor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean leucemia",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": "2",
+      "linfoma": false,
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leucemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean linfoma",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": "2",
+      "aids": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "linfoma"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean aids",
+    "input": {
+      "idade": "0",
+      "figado": "0",
+      "dm": "0",
+      "tumor": "0",
+      "iam": false,
+      "icc": false,
+      "dap": false,
+      "avc": false,
+      "demencia": false,
+      "dpoc": false,
+      "colageno": false,
+      "ulcera": false,
+      "hemiplegia": false,
+      "renal": false,
+      "leucemia": false,
+      "linfoma": false,
+      "aids": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "aids"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
