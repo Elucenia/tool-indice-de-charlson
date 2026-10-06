@@ -143,3 +143,51 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Sopravvivenza stimata a 10 anni: 98,3%
+
+| Dettagli del risultato | |
+| --- | --- |
+| Punti delle comorbidità (senza età) | 0 |
+| Punti per l'età | 0 |
+| Mortalità a 1 anno nella coorte di derivazione, in base alle comorbidità (Charlson 1987) | 12% |
+
+
+### 2
+
+Sopravvivenza stimata a 10 anni: 90,1%
+
+| Dettagli del risultato | |
+| --- | --- |
+| Punti delle comorbidità (senza età) | 2 |
+| Punti per l'età | 0 |
+| Mortalità a 1 anno nella coorte di derivazione, in base alle comorbidità (Charlson 1987) | 26% |
+
+
+### 3
+
+Sopravvivenza stimata a 10 anni: 53,4%
+
+| Dettagli del risultato | |
+| --- | --- |
+| Punti delle comorbidità (senza età) | 2 |
+| Punti per l'età | 2 |
+| Mortalità a 1 anno nella coorte di derivazione, in base alle comorbidità (Charlson 1987) | 26% |
+
+
+### 4
+
+Sopravvivenza stimata a 10 anni: 0,0%
+
+| Dettagli del risultato | |
+| --- | --- |
+| Punti delle comorbidità (senza età) | 6 |
+| Punti per l'età | 3 |
+| Mortalità a 1 anno nella coorte di derivazione, in base alle comorbidità (Charlson 1987) | 85% |
+

@@ -1,0 +1,2539 @@
+{
+  "id": "indice-de-charlson",
+  "implementationVersion": "indice-de-charlson@native-2026-10-05+6434855f6882",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pontos das comorbidades (sem idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Pontos pela idade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalidade em 1 ano na coorte de derivação, pelas comorbidades (Charlson 1987)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "12%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sobrevida estimada em 10 anos: 98,3%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pontos das comorbidades (sem idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Pontos pela idade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalidade em 1 ano na coorte de derivação, pelas comorbidades (Charlson 1987)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sobrevida estimada em 10 anos: 90,1%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pontos das comorbidades (sem idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Pontos pela idade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalidade em 1 ano na coorte de derivação, pelas comorbidades (Charlson 1987)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sobrevida estimada em 10 anos: 53,4%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Tumor metastático, 72 anos: 9 pontos",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pontos das comorbidades (sem idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Pontos pela idade",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalidade em 1 ano na coorte de derivação, pelas comorbidades (Charlson 1987)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "85%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sobrevida estimada em 10 anos: 0,0%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Comorbidity points (without age)",
+                "locale": "en",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Age points",
+                "locale": "en",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "1-year mortality in the derivation cohort, by comorbidities (Charlson 1987)",
+                "locale": "en",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "12%",
+                "locale": "en",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estimated 10-year survival: 98.3%",
+            "locale": "en",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              98.3
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Comorbidity points (without age)",
+                "locale": "en",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Age points",
+                "locale": "en",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "1-year mortality in the derivation cohort, by comorbidities (Charlson 1987)",
+                "locale": "en",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "en",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estimated 10-year survival: 90.1%",
+            "locale": "en",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              90.1
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Comorbidity points (without age)",
+                "locale": "en",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Age points",
+                "locale": "en",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "1-year mortality in the derivation cohort, by comorbidities (Charlson 1987)",
+                "locale": "en",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "en",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estimated 10-year survival: 53.4%",
+            "locale": "en",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              53.4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Tumor metastático, 72 anos: 9 pontos",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Comorbidity points (without age)",
+                "locale": "en",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "6",
+                "locale": "en",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Age points",
+                "locale": "en",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "3",
+                "locale": "en",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "1-year mortality in the derivation cohort, by comorbidities (Charlson 1987)",
+                "locale": "en",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "85%",
+                "locale": "en",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Estimated 10-year survival: 0.0%",
+            "locale": "en",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              0
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Puntos de las comorbilidades (sin edad)",
+                "locale": "es",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Puntos por edad",
+                "locale": "es",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalidad a 1 año en la cohorte de derivación, por comorbilidades (Charlson 1987)",
+                "locale": "es",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "12%",
+                "locale": "es",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Supervivencia estimada a 10 años: 98,3%",
+            "locale": "es",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              98.3
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Puntos de las comorbilidades (sin edad)",
+                "locale": "es",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Puntos por edad",
+                "locale": "es",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalidad a 1 año en la cohorte de derivación, por comorbilidades (Charlson 1987)",
+                "locale": "es",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "es",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Supervivencia estimada a 10 años: 90,1%",
+            "locale": "es",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              90.1
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Puntos de las comorbilidades (sin edad)",
+                "locale": "es",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Puntos por edad",
+                "locale": "es",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalidad a 1 año en la cohorte de derivación, por comorbilidades (Charlson 1987)",
+                "locale": "es",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "es",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Supervivencia estimada a 10 años: 53,4%",
+            "locale": "es",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              53.4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Tumor metastático, 72 anos: 9 pontos",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Puntos de las comorbilidades (sin edad)",
+                "locale": "es",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "6",
+                "locale": "es",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Puntos por edad",
+                "locale": "es",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "3",
+                "locale": "es",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalidad a 1 año en la cohorte de derivación, por comorbilidades (Charlson 1987)",
+                "locale": "es",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "85%",
+                "locale": "es",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Supervivencia estimada a 10 años: 0,0%",
+            "locale": "es",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              0
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Points des comorbidités (sans âge)",
+                "locale": "fr",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Points liés à l'âge",
+                "locale": "fr",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalité à 1 an dans la cohorte de dérivation, selon les comorbidités (Charlson 1987)",
+                "locale": "fr",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "12%",
+                "locale": "fr",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Survie estimée à 10 ans : 98,3%",
+            "locale": "fr",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              98.3
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Points des comorbidités (sans âge)",
+                "locale": "fr",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Points liés à l'âge",
+                "locale": "fr",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalité à 1 an dans la cohorte de dérivation, selon les comorbidités (Charlson 1987)",
+                "locale": "fr",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "fr",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Survie estimée à 10 ans : 90,1%",
+            "locale": "fr",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              90.1
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Points des comorbidités (sans âge)",
+                "locale": "fr",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Points liés à l'âge",
+                "locale": "fr",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalité à 1 an dans la cohorte de dérivation, selon les comorbidités (Charlson 1987)",
+                "locale": "fr",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "fr",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Survie estimée à 10 ans : 53,4%",
+            "locale": "fr",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              53.4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Tumor metastático, 72 anos: 9 pontos",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Points des comorbidités (sans âge)",
+                "locale": "fr",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "6",
+                "locale": "fr",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Points liés à l'âge",
+                "locale": "fr",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "3",
+                "locale": "fr",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalité à 1 an dans la cohorte de dérivation, selon les comorbidités (Charlson 1987)",
+                "locale": "fr",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "85%",
+                "locale": "fr",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Survie estimée à 10 ans : 0,0%",
+            "locale": "fr",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              0
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punkte der Komorbiditäten (ohne Alter)",
+                "locale": "de",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Alters-Punkte",
+                "locale": "de",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "1-Jahres-Mortalität in der Ableitungskohorte, nach Komorbiditäten (Charlson 1987)",
+                "locale": "de",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "12%",
+                "locale": "de",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Geschätztes 10-Jahres-Überleben: 98,3%",
+            "locale": "de",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              98.3
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punkte der Komorbiditäten (ohne Alter)",
+                "locale": "de",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Alters-Punkte",
+                "locale": "de",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "1-Jahres-Mortalität in der Ableitungskohorte, nach Komorbiditäten (Charlson 1987)",
+                "locale": "de",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "de",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Geschätztes 10-Jahres-Überleben: 90,1%",
+            "locale": "de",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              90.1
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punkte der Komorbiditäten (ohne Alter)",
+                "locale": "de",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Alters-Punkte",
+                "locale": "de",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "1-Jahres-Mortalität in der Ableitungskohorte, nach Komorbiditäten (Charlson 1987)",
+                "locale": "de",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "de",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Geschätztes 10-Jahres-Überleben: 53,4%",
+            "locale": "de",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              53.4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Tumor metastático, 72 anos: 9 pontos",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punkte der Komorbiditäten (ohne Alter)",
+                "locale": "de",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "6",
+                "locale": "de",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Alters-Punkte",
+                "locale": "de",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "3",
+                "locale": "de",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "1-Jahres-Mortalität in der Ableitungskohorte, nach Komorbiditäten (Charlson 1987)",
+                "locale": "de",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "85%",
+                "locale": "de",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Geschätztes 10-Jahres-Überleben: 0,0%",
+            "locale": "de",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              0
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punti delle comorbidità (senza età)",
+                "locale": "it",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Punti per l'età",
+                "locale": "it",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalità a 1 anno nella coorte di derivazione, in base alle comorbidità (Charlson 1987)",
+                "locale": "it",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "12%",
+                "locale": "it",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sopravvivenza stimata a 10 anni: 98,3%",
+            "locale": "it",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              98.3
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punti delle comorbidità (senza età)",
+                "locale": "it",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Punti per l'età",
+                "locale": "it",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalità a 1 anno nella coorte di derivazione, in base alle comorbidità (Charlson 1987)",
+                "locale": "it",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "it",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sopravvivenza stimata a 10 anni: 90,1%",
+            "locale": "it",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              90.1
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punti delle comorbidità (senza età)",
+                "locale": "it",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Punti per l'età",
+                "locale": "it",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalità a 1 anno nella coorte di derivazione, in base alle comorbidità (Charlson 1987)",
+                "locale": "it",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "it",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sopravvivenza stimata a 10 anni: 53,4%",
+            "locale": "it",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              53.4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Tumor metastático, 72 anos: 9 pontos",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punti delle comorbidità (senza età)",
+                "locale": "it",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "6",
+                "locale": "it",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Punti per l'età",
+                "locale": "it",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "3",
+                "locale": "it",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Mortalità a 1 anno nella coorte di derivazione, in base alle comorbidità (Charlson 1987)",
+                "locale": "it",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "85%",
+                "locale": "it",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sopravvivenza stimata a 10 anni: 0,0%",
+            "locale": "it",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              0
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نقاط الأمراض المصاحبة (بدون العمر)",
+                "locale": "ar",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "نقاط العمر",
+                "locale": "ar",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الوفيات خلال سنة واحدة في مجموعة الاشتقاق، بحسب الأمراض المصاحبة (Charlson 1987)",
+                "locale": "ar",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "١٢%",
+                "locale": "ar",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "البقاء المقدر لمدة 10 سنوات: ٩٨٫٣%",
+            "locale": "ar",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              98.3
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نقاط الأمراض المصاحبة (بدون العمر)",
+                "locale": "ar",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "نقاط العمر",
+                "locale": "ar",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الوفيات خلال سنة واحدة في مجموعة الاشتقاق، بحسب الأمراض المصاحبة (Charlson 1987)",
+                "locale": "ar",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "٢٦%",
+                "locale": "ar",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "البقاء المقدر لمدة 10 سنوات: ٩٠٫١%",
+            "locale": "ar",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              90.1
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نقاط الأمراض المصاحبة (بدون العمر)",
+                "locale": "ar",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "نقاط العمر",
+                "locale": "ar",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الوفيات خلال سنة واحدة في مجموعة الاشتقاق، بحسب الأمراض المصاحبة (Charlson 1987)",
+                "locale": "ar",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "٢٦%",
+                "locale": "ar",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "البقاء المقدر لمدة 10 سنوات: ٥٣٫٤%",
+            "locale": "ar",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              53.4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Tumor metastático, 72 anos: 9 pontos",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نقاط الأمراض المصاحبة (بدون العمر)",
+                "locale": "ar",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "٦",
+                "locale": "ar",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "نقاط العمر",
+                "locale": "ar",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "٣",
+                "locale": "ar",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الوفيات خلال سنة واحدة في مجموعة الاشتقاق، بحسب الأمراض المصاحبة (Charlson 1987)",
+                "locale": "ar",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "٨٥%",
+                "locale": "ar",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "البقاء المقدر لمدة 10 سنوات: ٠٫٠%",
+            "locale": "ar",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              0
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "合并症分数（不含年龄）",
+                "locale": "zh",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年龄分数",
+                "locale": "zh",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "推导队列中 1 年死亡率，按合并症（Charlson 1987）",
+                "locale": "zh",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "12%",
+                "locale": "zh",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "估计 10 年生存率：98.3%",
+            "locale": "zh",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              98.3
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "合并症分数（不含年龄）",
+                "locale": "zh",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年龄分数",
+                "locale": "zh",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "推导队列中 1 年死亡率，按合并症（Charlson 1987）",
+                "locale": "zh",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "zh",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "估计 10 年生存率：90.1%",
+            "locale": "zh",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              90.1
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "合并症分数（不含年龄）",
+                "locale": "zh",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年龄分数",
+                "locale": "zh",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "推导队列中 1 年死亡率，按合并症（Charlson 1987）",
+                "locale": "zh",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "zh",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "估计 10 年生存率：53.4%",
+            "locale": "zh",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              53.4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Tumor metastático, 72 anos: 9 pontos",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "合并症分数（不含年龄）",
+                "locale": "zh",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "6",
+                "locale": "zh",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年龄分数",
+                "locale": "zh",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "3",
+                "locale": "zh",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "推导队列中 1 年死亡率，按合并症（Charlson 1987）",
+                "locale": "zh",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "85%",
+                "locale": "zh",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "估计 10 年生存率：0.0%",
+            "locale": "zh",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              0
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "併存疾患の点数（年齢を除く）",
+                "locale": "ja",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年齢の点数",
+                "locale": "ja",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "導出コホートにおける1年死亡率、併存疾患別（Charlson 1987）",
+                "locale": "ja",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "12%",
+                "locale": "ja",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "推定10年生存率：98.3%",
+            "locale": "ja",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              98.3
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "併存疾患の点数（年齢を除く）",
+                "locale": "ja",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年齢の点数",
+                "locale": "ja",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "導出コホートにおける1年死亡率、併存疾患別（Charlson 1987）",
+                "locale": "ja",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "ja",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "推定10年生存率：90.1%",
+            "locale": "ja",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              90.1
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "併存疾患の点数（年齢を除く）",
+                "locale": "ja",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年齢の点数",
+                "locale": "ja",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "導出コホートにおける1年死亡率、併存疾患別（Charlson 1987）",
+                "locale": "ja",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "ja",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "推定10年生存率：53.4%",
+            "locale": "ja",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              53.4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Tumor metastático, 72 anos: 9 pontos",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "併存疾患の点数（年齢を除く）",
+                "locale": "ja",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "6",
+                "locale": "ja",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "年齢の点数",
+                "locale": "ja",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "3",
+                "locale": "ja",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "導出コホートにおける1年死亡率、併存疾患別（Charlson 1987）",
+                "locale": "ja",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "85%",
+                "locale": "ja",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "推定10年生存率：0.0%",
+            "locale": "ja",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              0
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सह-रुग्णताओं के अंक (आयु के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आयु के अंक",
+                "locale": "hi",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "व्युत्पन्न समूह में 1-वर्षीय मृत्यु दर, सह-रुग्णताओं के अनुसार (Charlson 1987)",
+                "locale": "hi",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "12%",
+                "locale": "hi",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अनुमानित 10-वर्षीय जीवित रहने की दर: 98.3%",
+            "locale": "hi",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              98.3
+            ]
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सह-रुग्णताओं के अंक (आयु के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आयु के अंक",
+                "locale": "hi",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "व्युत्पन्न समूह में 1-वर्षीय मृत्यु दर, सह-रुग्णताओं के अनुसार (Charlson 1987)",
+                "locale": "hi",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "hi",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अनुमानित 10-वर्षीय जीवित रहने की दर: 90.1%",
+            "locale": "hi",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              90.1
+            ]
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सह-रुग्णताओं के अंक (आयु के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आयु के अंक",
+                "locale": "hi",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "व्युत्पन्न समूह में 1-वर्षीय मृत्यु दर, सह-रुग्णताओं के अनुसार (Charlson 1987)",
+                "locale": "hi",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "26%",
+                "locale": "hi",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  26
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अनुमानित 10-वर्षीय जीवित रहने की दर: 53.4%",
+            "locale": "hi",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              53.4
+            ]
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Tumor metastático, 72 anos: 9 pontos",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "सह-रुग्णताओं के अंक (आयु के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-4f142779156553e23d84"
+              },
+              "value": {
+                "text": "6",
+                "locale": "hi",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "आयु के अंक",
+                "locale": "hi",
+                "template": "documented-authored-2c764f99b1ca6cee8d54"
+              },
+              "value": {
+                "text": "3",
+                "locale": "hi",
+                "template": "documented-authored-523ca076996d6c38e174",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "व्युत्पन्न समूह में 1-वर्षीय मृत्यु दर, सह-रुग्णताओं के अनुसार (Charlson 1987)",
+                "locale": "hi",
+                "template": "documented-authored-c02848239ebd8ce19a0f"
+              },
+              "value": {
+                "text": "85%",
+                "locale": "hi",
+                "template": "documented-authored-245029832e3a8677dc2e",
+                "sourceNumbers": [
+                  85
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अनुमानित 10-वर्षीय जीवित रहने की दर: 0.0%",
+            "locale": "hi",
+            "template": "documented-authored-35d01fef9b302c62b542",
+            "sourceNumbers": [
+              0
+            ]
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

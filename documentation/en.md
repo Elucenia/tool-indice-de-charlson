@@ -143,3 +143,51 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Estimated 10-year survival: 98.3%
+
+| Result details | |
+| --- | --- |
+| Comorbidity points (without age) | 0 |
+| Age points | 0 |
+| 1-year mortality in the derivation cohort, by comorbidities (Charlson 1987) | 12% |
+
+
+### 2
+
+Estimated 10-year survival: 90.1%
+
+| Result details | |
+| --- | --- |
+| Comorbidity points (without age) | 2 |
+| Age points | 0 |
+| 1-year mortality in the derivation cohort, by comorbidities (Charlson 1987) | 26% |
+
+
+### 3
+
+Estimated 10-year survival: 53.4%
+
+| Result details | |
+| --- | --- |
+| Comorbidity points (without age) | 2 |
+| Age points | 2 |
+| 1-year mortality in the derivation cohort, by comorbidities (Charlson 1987) | 26% |
+
+
+### 4
+
+Estimated 10-year survival: 0.0%
+
+| Result details | |
+| --- | --- |
+| Comorbidity points (without age) | 6 |
+| Age points | 3 |
+| 1-year mortality in the derivation cohort, by comorbidities (Charlson 1987) | 85% |
+

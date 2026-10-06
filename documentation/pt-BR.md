@@ -143,3 +143,51 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Sobrevida estimada em 10 anos: 98,3%
+
+| Detalhes do resultado | |
+| --- | --- |
+| Pontos das comorbidades (sem idade) | 0 |
+| Pontos pela idade | 0 |
+| Mortalidade em 1 ano na coorte de derivação, pelas comorbidades (Charlson 1987) | 12% |
+
+
+### 2
+
+Sobrevida estimada em 10 anos: 90,1%
+
+| Detalhes do resultado | |
+| --- | --- |
+| Pontos das comorbidades (sem idade) | 2 |
+| Pontos pela idade | 0 |
+| Mortalidade em 1 ano na coorte de derivação, pelas comorbidades (Charlson 1987) | 26% |
+
+
+### 3
+
+Sobrevida estimada em 10 anos: 53,4%
+
+| Detalhes do resultado | |
+| --- | --- |
+| Pontos das comorbidades (sem idade) | 2 |
+| Pontos pela idade | 2 |
+| Mortalidade em 1 ano na coorte de derivação, pelas comorbidades (Charlson 1987) | 26% |
+
+
+### 4
+
+Sobrevida estimada em 10 anos: 0,0%
+
+| Detalhes do resultado | |
+| --- | --- |
+| Pontos das comorbidades (sem idade) | 6 |
+| Pontos pela idade | 3 |
+| Mortalidade em 1 ano na coorte de derivação, pelas comorbidades (Charlson 1987) | 85% |
+

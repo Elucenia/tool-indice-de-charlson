@@ -1,0 +1,359 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "indice-de-charlson",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "3b262b41e304ef838d7cab6b7551fcc9df35ee46",
+    "oldEngineSha256": "9faf773ca651ae2a67aa9c7ad2942ee8fcce70930e4e3d6964d349fa6e124374",
+    "currentEngineSha256": "6434855f688238fa9f7b7ae306e431678ffb264aa0c30e23136ad5ef874eb531"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Sem comorbidades, 45 anos: 0 ponto, sobrevida 98,3%",
+      "input": {
+        "idade": "0",
+        "figado": "0",
+        "dm": "0",
+        "tumor": "0",
+        "iam": false,
+        "icc": false,
+        "dap": false,
+        "avc": false,
+        "demencia": false,
+        "dpoc": false,
+        "colageno": false,
+        "ulcera": false,
+        "hemiplegia": false,
+        "renal": false,
+        "leucemia": false,
+        "linfoma": false,
+        "aids": false
+      },
+      "publicOutput": {
+        "id": "indice-de-charlson",
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "Charlson ajustado pela idade",
+        "raw": {
+          "score": 0,
+          "cci": 0,
+          "sobrevida": 98.3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "raw": {
+          "sobrevida": 98.3
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "Charlson ajustado pela idade",
+        "level": "low",
+        "verdict": "Sobrevida estimada em 10 anos: 98,3%",
+        "rows": [
+          [
+            "Pontos das comorbidades (sem idade)",
+            "0"
+          ],
+          [
+            "Pontos pela idade",
+            "0"
+          ],
+          [
+            "Mortalidade em 1 ano na coorte de derivação, pelas comorbidades (Charlson 1987)",
+            "12%"
+          ]
+        ],
+        "raw": {
+          "score": 0,
+          "cci": 0,
+          "sobrevida": 98.3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "ICC e DPOC, 45 anos: 2 pontos, sobrevida 90,1%",
+      "input": {
+        "idade": "0",
+        "icc": true,
+        "dpoc": true,
+        "figado": "0",
+        "dm": "0",
+        "tumor": "0",
+        "iam": false,
+        "dap": false,
+        "avc": false,
+        "demencia": false,
+        "colageno": false,
+        "ulcera": false,
+        "hemiplegia": false,
+        "renal": false,
+        "leucemia": false,
+        "linfoma": false,
+        "aids": false
+      },
+      "publicOutput": {
+        "id": "indice-de-charlson",
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "Charlson ajustado pela idade",
+        "raw": {
+          "score": 2,
+          "cci": 2,
+          "sobrevida": 90.14702690368213
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "raw": {
+          "sobrevida": 90.15
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "Charlson ajustado pela idade",
+        "level": "mid",
+        "verdict": "Sobrevida estimada em 10 anos: 90,1%",
+        "rows": [
+          [
+            "Pontos das comorbidades (sem idade)",
+            "2"
+          ],
+          [
+            "Pontos pela idade",
+            "0"
+          ],
+          [
+            "Mortalidade em 1 ano na coorte de derivação, pelas comorbidades (Charlson 1987)",
+            "26%"
+          ]
+        ],
+        "raw": {
+          "score": 2,
+          "cci": 2,
+          "sobrevida": 90.14702690368213
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "IAM e diabetes sem lesão, 65 anos: 4 pontos, sobrevida 53,4%",
+      "input": {
+        "idade": "2",
+        "iam": true,
+        "figado": "0",
+        "dm": "1",
+        "tumor": "0",
+        "icc": false,
+        "dap": false,
+        "avc": false,
+        "demencia": false,
+        "dpoc": false,
+        "colageno": false,
+        "ulcera": false,
+        "hemiplegia": false,
+        "renal": false,
+        "leucemia": false,
+        "linfoma": false,
+        "aids": false
+      },
+      "publicOutput": {
+        "id": "indice-de-charlson",
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "Charlson ajustado pela idade",
+        "raw": {
+          "score": 4,
+          "cci": 2,
+          "sobrevida": 53.39147265666947
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 4,
+        "raw": {
+          "cci": 2,
+          "sobrevida": 53.39
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "Charlson ajustado pela idade",
+        "level": "high",
+        "verdict": "Sobrevida estimada em 10 anos: 53,4%",
+        "rows": [
+          [
+            "Pontos das comorbidades (sem idade)",
+            "2"
+          ],
+          [
+            "Pontos pela idade",
+            "2"
+          ],
+          [
+            "Mortalidade em 1 ano na coorte de derivação, pelas comorbidades (Charlson 1987)",
+            "26%"
+          ]
+        ],
+        "raw": {
+          "score": 4,
+          "cci": 2,
+          "sobrevida": 53.39147265666947
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Tumor metastático, 72 anos: 9 pontos",
+      "input": {
+        "idade": "3",
+        "figado": "0",
+        "dm": "0",
+        "tumor": "6",
+        "iam": false,
+        "icc": false,
+        "dap": false,
+        "avc": false,
+        "demencia": false,
+        "dpoc": false,
+        "colageno": false,
+        "ulcera": false,
+        "hemiplegia": false,
+        "renal": false,
+        "leucemia": false,
+        "linfoma": false,
+        "aids": false
+      },
+      "publicOutput": {
+        "id": "indice-de-charlson",
+        "main": [
+          "9",
+          "pontos"
+        ],
+        "label": "Charlson ajustado pela idade",
+        "raw": {
+          "score": 9,
+          "cci": 6,
+          "sobrevida": 2.936312167835233e-23
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 9,
+        "raw": {
+          "cci": 6,
+          "sobrevida": 0
+        },
+        "level": "high",
+        "tol": 0.1
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "9",
+          "pontos"
+        ],
+        "label": "Charlson ajustado pela idade",
+        "level": "high",
+        "verdict": "Sobrevida estimada em 10 anos: 0,0%",
+        "rows": [
+          [
+            "Pontos das comorbidades (sem idade)",
+            "6"
+          ],
+          [
+            "Pontos pela idade",
+            "3"
+          ],
+          [
+            "Mortalidade em 1 ano na coorte de derivação, pelas comorbidades (Charlson 1987)",
+            "85%"
+          ]
+        ],
+        "raw": {
+          "score": 9,
+          "cci": 6,
+          "sobrevida": 2.936312167835233e-23
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

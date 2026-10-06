@@ -408,7 +408,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "CCI/Charlson 1987; ageadjusted Charlson 1994; pontos idade 50–59/60–69/70–79/≥80; estimativasobrevida local",
-    "implementationVersion": "indice-de-charlson@native-2026-10-03+9faf773ca651",
+    "implementationVersion": "indice-de-charlson@native-2026-10-05+6434855f6882",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3558716/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -783,7 +783,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "9faf773ca651ae2a67aa9c7ad2942ee8fcce70930e4e3d6964d349fa6e124374"
+      "implementationHash": "6434855f688238fa9f7b7ae306e431678ffb264aa0c30e23136ad5ef874eb531",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "indice-de-charlson@native-2026-10-03+9faf773ca651",
+          "previousImplementationHash": "9faf773ca651ae2a67aa9c7ad2942ee8fcce70930e4e3d6964d349fa6e124374",
+          "implementationHash": "6434855f688238fa9f7b7ae306e431678ffb264aa0c30e23136ad5ef874eb531",
+          "scientificBodySha256": "2a50d76b9b87479aedfee47a9d92b74a17ec26bc9182c61418d2426b4ec21cd3",
+          "metadataContractHash": "f285fe8f5e47d405b599ac87b9e1ca1068f5b59c487183b1b81ce1032ac495b9",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Identifique se o índice inclui ajuste por idade. É uma medida prognóstica de comorbidade estudada em coortes e horizontes definidos, não uma previsão universal. A equação local de sobrevida exige conferência e calibração próprias; a presença da referência bibliográfica não comprova seu desempenho individual.",
     "sourceLimitEvidence": {
@@ -802,20 +830,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/indice-de-charlson/calculator.js",
-    "bytes": 6171,
-    "sha256": "9faf773ca651ae2a67aa9c7ad2942ee8fcce70930e4e3d6964d349fa6e124374"
+    "bytes": 6376,
+    "sha256": "6434855f688238fa9f7b7ae306e431678ffb264aa0c30e23136ad5ef874eb531"
   },
-  "sourceToolSha256": "4cd18f81829779b6689c1e259bc66b506b4d6028a5ec1ccfe493d405fd289156",
+  "sourceToolSha256": "7e47bbb28a65d921aee1123177c1ba988ff97a27e5037e8de6b375f0f51afe9a",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "2a799229c7608917b006cfefe7a82f1b0704ea4ef2c1ea65c5c5971339bb0c90",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "2a799229c7608917b006cfefe7a82f1b0704ea4ef2c1ea65c5c5971339bb0c90",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

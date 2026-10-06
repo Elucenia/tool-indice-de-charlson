@@ -143,3 +143,51 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Survie estimée à 10 ans : 98,3%
+
+| Détails du résultat | |
+| --- | --- |
+| Points des comorbidités (sans âge) | 0 |
+| Points liés à l'âge | 0 |
+| Mortalité à 1 an dans la cohorte de dérivation, selon les comorbidités (Charlson 1987) | 12% |
+
+
+### 2
+
+Survie estimée à 10 ans : 90,1%
+
+| Détails du résultat | |
+| --- | --- |
+| Points des comorbidités (sans âge) | 2 |
+| Points liés à l'âge | 0 |
+| Mortalité à 1 an dans la cohorte de dérivation, selon les comorbidités (Charlson 1987) | 26% |
+
+
+### 3
+
+Survie estimée à 10 ans : 53,4%
+
+| Détails du résultat | |
+| --- | --- |
+| Points des comorbidités (sans âge) | 2 |
+| Points liés à l'âge | 2 |
+| Mortalité à 1 an dans la cohorte de dérivation, selon les comorbidités (Charlson 1987) | 26% |
+
+
+### 4
+
+Survie estimée à 10 ans : 0,0%
+
+| Détails du résultat | |
+| --- | --- |
+| Points des comorbidités (sans âge) | 6 |
+| Points liés à l'âge | 3 |
+| Mortalité à 1 an dans la cohorte de dérivation, selon les comorbidités (Charlson 1987) | 85% |
+
